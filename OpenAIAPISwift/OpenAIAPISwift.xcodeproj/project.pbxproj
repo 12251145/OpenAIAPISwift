@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3922510880CF4EA9ED393F3C /* Pods_OpenAIAPISwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5037C5BD00AF6ADC005E58B /* Pods_OpenAIAPISwift.framework */; };
 		6A7813BF29B8AF570089E7C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7813BE29B8AF570089E7C4 /* AppDelegate.swift */; };
 		6A7813C129B8AF570089E7C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7813C029B8AF570089E7C4 /* SceneDelegate.swift */; };
 		6A7813C329B8AF570089E7C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7813C229B8AF570089E7C4 /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		6A7813C729B8AF5A0089E7C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A7813CA29B8AF5A0089E7C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A7813CC29B8AF5A0089E7C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C4141C9431B3DBDEE4422E /* Pods-OpenAIAPISwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAIAPISwift.debug.xcconfig"; path = "Target Support Files/Pods-OpenAIAPISwift/Pods-OpenAIAPISwift.debug.xcconfig"; sourceTree = "<group>"; };
+		9E75D6029415150517FD9D77 /* Pods-OpenAIAPISwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAIAPISwift.release.xcconfig"; path = "Target Support Files/Pods-OpenAIAPISwift/Pods-OpenAIAPISwift.release.xcconfig"; sourceTree = "<group>"; };
+		D5037C5BD00AF6ADC005E58B /* Pods_OpenAIAPISwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenAIAPISwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3922510880CF4EA9ED393F3C /* Pods_OpenAIAPISwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2740AB48494741A5353B3045 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93C4141C9431B3DBDEE4422E /* Pods-OpenAIAPISwift.debug.xcconfig */,
+				9E75D6029415150517FD9D77 /* Pods-OpenAIAPISwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6A7813B229B8AF560089E7C4 = {
 			isa = PBXGroup;
 			children = (
 				6A7813BD29B8AF570089E7C4 /* OpenAIAPISwift */,
 				6A7813BC29B8AF570089E7C4 /* Products */,
+				2740AB48494741A5353B3045 /* Pods */,
+				8C261A29502B61F155AC1426 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = OpenAIAPISwift;
 			sourceTree = "<group>";
 		};
+		8C261A29502B61F155AC1426 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5037C5BD00AF6ADC005E58B /* Pods_OpenAIAPISwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A7813CF29B8AF5A0089E7C4 /* Build configuration list for PBXNativeTarget "OpenAIAPISwift" */;
 			buildPhases = (
+				DCF9754AF90CCAA81A8DB7CF /* [CP] Check Pods Manifest.lock */,
 				6A7813B729B8AF570089E7C4 /* Sources */,
 				6A7813B829B8AF570089E7C4 /* Frameworks */,
 				6A7813B929B8AF570089E7C4 /* Resources */,
+				9B58AEFBDF5C1B3F1ADD1AFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B58AEFBDF5C1B3F1ADD1AFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenAIAPISwift/Pods-OpenAIAPISwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenAIAPISwift/Pods-OpenAIAPISwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenAIAPISwift/Pods-OpenAIAPISwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF9754AF90CCAA81A8DB7CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenAIAPISwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A7813B729B8AF570089E7C4 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		6A7813D029B8AF5A0089E7C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93C4141C9431B3DBDEE4422E /* Pods-OpenAIAPISwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		6A7813D129B8AF5A0089E7C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E75D6029415150517FD9D77 /* Pods-OpenAIAPISwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

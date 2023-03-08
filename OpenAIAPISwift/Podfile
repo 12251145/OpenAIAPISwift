@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '16.2'
+
+target 'OpenAIAPISwift' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'RIBs', :git => 'https://github.com/uber/RIBs.git', :tag => 'v0.13.2'
+
+  # Pods for OpenAIAPISwift
+
+end
