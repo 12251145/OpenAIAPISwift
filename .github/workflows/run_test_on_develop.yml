@@ -26,6 +26,7 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Xcode test
         run: |
-          xcodebuild clean test -project OpenAIAPISwift/OpenAIAPISwift.xcodeproj -scheme OpenAIAPISwift -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.2'
+           pod install --repo-update --clean-install --project-directory=OpenAIAPISwift/
+           xcodebuild clean test -workspace OpenAIAPISwift/OpenAIAPISwift.xcodeproj -scheme OpenAIAPISwift -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.2'
