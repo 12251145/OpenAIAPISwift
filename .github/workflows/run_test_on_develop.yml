@@ -29,4 +29,4 @@ jobs:
       - name: Xcode test
         run: |
            pod install --repo-update --clean-install --project-directory=OpenAIAPISwift/
-           xcodebuild clean test -workspace OpenAIAPISwift/OpenAIAPISwift.xcodeproj -scheme OpenAIAPISwift -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.2'
+           xcodebuild clean test -workspace OpenAIAPISwift/OpenAIAPISwift.xcworkspace -scheme OpenAIAPISwift -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.2'
